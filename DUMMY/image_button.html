@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: -4%;
+  left: 96%;
+ 
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  /*padding: 12px 24px;*/
+  border: none;
+  cursor: pointer;
+  border-radius:50%;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+</style>
+<script>
+function remove_img(){
+document.getElementById('img').remove();
+document.getElementById('img').remove();
+}
+</script>
+</head>
+<body>
+
+<h2>Button on Image</h2>
+<p>Add a button to an image:</p>
+
+<div class="container">
+  <img src="img_snow.jpg" alt="Snow" id="img" style="width:100%">
+  <button class="btn" id="img" onclick="remove_img()">X</button>
+</div>
+
+</body>
+</html>
