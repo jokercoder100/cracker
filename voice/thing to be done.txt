@@ -1,0 +1,15 @@
+-------------------------------------------------------------
+After executing the "identify.js" its response has a attribute called "'operation-location':" 
+This url has to be given as "location" value in "operation.js"
+
+but the problem is the response of identify.js is not in correct JSON format.. its throwing error if tried to parse.so just printed the whole response and mannually copied the url
+-------------------------------------------------------------
+
+record voice: Voice2.js
+enrol first voice to a profile id: enrol.js
+initiate identifying the profileid: identify.js
+finding out voice match success or failure: operation.js
+
+voice that was used for enrolling: Golden_copy.wav
+voice that was used for detecting: fixed.wav
+response from identify.js
